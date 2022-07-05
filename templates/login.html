@@ -1,0 +1,27 @@
+{% extends "layout.html" %}
+{% block title %} Giriş Yap{% endblock title %}
+
+{% block body %}
+
+<div class = "jumbotron-text-center">
+    <h2 id="login-main-title">Giriş Yap</h2>
+    {% from "includes/formhelpers.html" import render_field %}
+    
+    <form method = "post" id="login-form">
+    
+        <div class="lf-input-sec">
+            {{ render_field(form.name,class="inputt")}}
+            {{ render_field(form.password, class="inputt")}}
+            <br>
+            <button type="submit" class="btn btn-primary" id="login-btn">Giriş Yap</button>
+        </div>
+
+    </form>
+    
+</div>
+
+{% endblock body %}
+
+{% block script %}
+
+{% endblock script %}

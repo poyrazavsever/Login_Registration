@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block title %}
+Ana Sayfa
+{% endblock title %}
+
+{% block body %}
+
+<!-- Yönlendirme İşlemleri -->
+<nav>
+    <div class="navbar">
+        <ul class="navbar-links">
+            {% if session["logged_in"]%}
+            <li>
+                <a href="/logout">Çıkış Yap</a>
+            </li>
+            {% else %}
+            <li>
+                <a href="/login">Giriş Yap</a>
+            </li>
+            <li>
+                <a href="/register">Kayıt Ol</a>
+            </li>
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+
+<br><br><br><br><br>
+
+<h2>Ana Sayfa</h2>
+
+{% endblock body %}
