@@ -1,3 +1,5 @@
+# Python ile Giriş ve Kayıt ol sistemi
+
 Öncellikle yapmak isteyeceğiniz düzelmeler için:
 Register.py dosyasında
 satır 93'te code == "deneme1" kısmında "deneme1" yazan yere istediğiniz kodu yazabilirsiniz.
@@ -22,4 +24,3 @@ pip install passlib
 9.Dosyayı sağ yukarıdan çalıştırın.
 10.http://127.0.0.1:5000 adresine gidin ve çalışıyor mu diye test edin.
 
-!Eğer her hangi bir hata olursa bana discordtan ulaşabilirsiniz.
